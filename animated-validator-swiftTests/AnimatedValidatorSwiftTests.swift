@@ -12,12 +12,11 @@ import Quick
 import KIF
 @testable import animated_validator_swift
 
-class ValidatorViewController: QuickSpec {
+class ValidatorViewControllerTest: QuickSpec {
      //SpecBegin(ValidatorViewController)
     override func spec() {
         
         let tester = KIFUITestActor()
-        
         let submitButton =  tester.waitForViewWithAccessibilityLabel(Constants.SUBMITBUTTON) as! UIButton
         
         describe("submit button:") {
